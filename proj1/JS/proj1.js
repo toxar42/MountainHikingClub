@@ -33,8 +33,8 @@ function push_up()
 function todayData()
 {
     let Data = new Date();
-    Day = Data.getDate();
-    Month = Data.getMonth();
+    let Day = Data.getDate();
+    let Month = Data.getMonth();
     switch (Month)
 {
   case 0: fMonth="Janyary"; break;
@@ -106,4 +106,22 @@ ele.addEventListener('mouseout',(e)=>
     let psh = document.querySelector('.pushupsapp');
     psh.classList.remove('pushupsapp');
     psh.classList.add('pushups');
+})
+let pops = document.querySelector('#tag');
+let pops_txt = document.querySelector('.pop');
+let cont = document.querySelector('.popup');
+pops.addEventListener('click',(e)=>
+{
+    cont.classList.remove('popup');
+    cont.classList.add('null');
+    pops_txt.classList.remove('pop');
+    pops_txt.classList.add('popnull');
+})
+let nulltag = document.querySelector('.popup');
+nulltag.addEventListener('mouseover',(e)=>
+{
+    cont.classList.remove('null');
+    cont.classList.add('popup');
+    pops_txt.classList.remove('popnull');
+    pops_txt.classList.add('pop');
 })
