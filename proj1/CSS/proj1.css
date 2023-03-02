@@ -235,7 +235,7 @@ body
 {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 60%;
     height: 100%;
 }
 .price
@@ -359,18 +359,11 @@ img.page
     font-size: 20px;
     line-height: 40px;
 }
-.tours
-{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 20px;
-}
 .trs
 {
     align-self: center;
-    max-width: 90%;
-    max-height: 90%;
+    max-width: 70%;
+    max-height: 70%;
 }
 .descr
 {
@@ -591,12 +584,95 @@ img.page
     justify-content: space-between;
     height: 100%;
     width: 75%;
-    top: 22.5%;
-    left: 12.5%;
+    /* top: 165px;
+    right: 60px; */
+    gap: 8px;
 }
 .coll
 {
     width: 75px;
     height: 55px;
 }
+.tours
+{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+}
+.popup
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    background-color: #18333E;
+    border-radius: 20px;
+    height: 90%;
+    transition: 3s;
+    animation-duration: 2.5s;
+    animation-name: slide;
+}
+@keyframes slide
+{
+    from 
+    {
+        margin-left: 10%;
+        width: 0%;
+    }
+  
+    to 
+    {
+        margin-left: 0%;
+        width: 50%;
+    }
+}
+.pop
+{
+    display: flex;
+    height: 50%;
+    width: 50%;
+    justify-content: space-around;
+    gap: 20px;
+}
+.popnull
+{
+    display: none;
+}
+.popup_text
+{
+    display: flex;
+    color: white;
+    align-items: center;
+}
+.null
+{
+    animation-duration: 2s;
+    animation-name: appear;
+}
+@keyframes appear 
+{
+    from 
+    {
+        margin-left: -10%;
+        height: 0px;
+        width: 0px;
+    }
+    to 
+    {
+        margin-left: 0%;
+        height: 119px;
+        width: 118px;
+    }
+}
+.null img
+{
+    align-self: center;
+    max-width: 100%;
+    max-height: 100%;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
