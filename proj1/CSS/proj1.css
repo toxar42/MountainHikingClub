@@ -1,0 +1,602 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+/* img
+{ 
+    pointer-events: none;
+    -moz-user-select: none; 
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+} */
+.smallph
+{
+    min-height: 20px;
+    min-width: 20px;
+    align-self: center; 
+    z-index: 1000;
+    position: relative;
+}
+body
+{
+    width: 100%;
+    height: 100vh;
+    background-color: #F2F8FD;
+    font-family: 'Baloo 2';
+    color:#18333E;
+}
+.centering
+{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+    position: relative;
+    top:10px;
+}
+.center
+{
+    width: calc(100% - 80px);
+    height: 90%;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.menu
+{
+    display: flex;
+    width: 90%;
+    height: 40px;
+    justify-content: space-between;
+}
+.search
+{   
+    display: flex;
+    border-radius: 25px;
+    background-color:  #E9F1FA;
+    width: 80%;
+    height: 100%;
+    text-align: left;
+}
+.loop
+{
+    height: 18px;
+    width: 18px;
+    margin-top: 9px;
+    padding-right: 10px;
+    padding-left: 9px;
+}
+.txt_search
+{
+    letter-spacing: 1px;
+    color: rgb(95, 95, 95);
+    font-size: 18px;
+    line-height: 36px;
+}
+.param
+{   
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: black;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+.par
+{
+    height: 24px;
+    width: 24px;
+    align-self: center;
+}
+.push
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border: 1px solid grey;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    z-index: 120;
+}
+.pushh
+{
+    height: 18px;
+    width: 18px;
+    align-self: center; 
+}
+.profile
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border: 1px solid grey;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+.prof
+{
+    height: 20px;
+    width: 20px;
+    align-self: center; 
+}
+.location
+{
+    display: flex;
+    border-radius: 25px;
+    background-color:  #E9F1FA;
+    width: 15%;
+    height: 100%;
+    text-align: left;
+    padding-left: 5px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.tag
+{
+    min-height: 20px;
+    min-width: 20px;
+    align-self: center; 
+}
+.loco
+{
+    background-color: #E9F1FA;
+    width: 80%;
+    height: 70%;
+    align-self: center;
+    border: 0px;
+}
+.icon
+{
+    height: 100%;
+    width: 10%;
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.fullsearch
+{
+    height: 100%;
+    width: 60%;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;   
+}
+.content
+{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 70px;
+}
+.cont
+{
+    display: flex;
+    width: 50%;
+    height: auto;
+    gap:20px;
+}
+.cont1
+{
+    display: flex;
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+    gap:20px;
+}
+.cont1::after{
+    content: '';
+    height: 40px;
+    width: 70px;
+    background-color: #F9D44A;
+    position: absolute;
+    top: 0;
+    left: -40px;
+    z-index: 0;
+    border-radius: 0px 30px 30px 0px;
+    gap:20px;
+}
+.theme
+{
+    text-align: left;
+}
+.links
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+    gap: 40px;
+    margin-top: 10px;
+}
+.lin
+{
+    text-decoration:none;
+    font-size: 14px;
+    color: grey;
+}
+.board
+{
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    font-family: 'Baloo 2';
+    line-height: 36px;
+    height: 80%;
+    width: 10%;
+    justify-content: space-around;
+}
+.cards
+{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+.price
+{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 35%;
+}
+.Description
+{
+    text-align: left;
+    padding-top: 15px;
+}
+.mount
+{
+    height: 270px;
+    width: 100%;
+    border-radius: 25px;
+    align-self: center;
+}
+.catalog
+{   
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+    width: 100%;
+    gap: 25px;
+}
+.name
+{   
+    display: flex;
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+    line-height: 40px;
+    gap: 10px;
+}
+.page
+{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+img.page
+{
+    height: 300px;
+    width: 200px;
+}
+.calendar
+{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    flex-direction: column;
+}
+.dt
+{
+    margin-top: 20px;
+    display: flex;
+    height: 20%;
+    width: 100%;
+    justify-content: space-between;
+}
+.toddate
+{
+    border-radius: 20px;
+    border: 1px solid #B4BCC4;
+    height: 32px;
+}
+.today
+{
+    margin-left:10px;
+    margin-right: 10px; 
+    line-height: 32px;
+    font-size: 16px;
+}
+.bookingdate
+{
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+.checkedbd
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #18333E;
+    border-radius: 35px;
+    gap:10px;
+    width: 7%;
+    text-align: center;
+    color:white;
+    font-size: 20px;
+    line-height: 40px;
+}
+.checkedbd::after
+{
+    content: '';
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    background-color: #F9D44A;
+    height: 8px;
+    width: 5px;
+    border-radius: 13px;
+}
+.bookdate
+{
+    display: flex;
+    flex-direction: column;
+    width: 7%;
+    height: 100%;
+    gap:15px; 
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+    line-height: 40px;
+}
+.tours
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.trs
+{
+    align-self: center;
+    max-width: 90%;
+    max-height: 90%;
+}
+.descr
+{
+    display: flex;
+    width: 95%;
+    height: auto;
+    justify-content: space-between;
+}
+.cost
+{
+    display: flex;
+    padding-top: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+.travel
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 15px;
+}
+.per
+{
+    width: 85%;
+    font-size:16px;
+    text-align: justify;
+}
+.pr
+{
+    font-size: 40px;
+}
+.col
+{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    height: 60px;
+}
+.places
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.book
+{
+    background-color: #18333E;
+    color:#FFFFFF;
+    font-size: 18px;
+    border-radius: 30px;
+    width: 175px;
+    height: 60px;
+    border: 0;
+}
+.place
+{
+    height: 80px;
+    width: 125px;
+}
+.despl
+{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
+}
+.mo
+{
+    display: flex;
+    height: auto;
+    width: auto;
+    line-height: 20px;
+    gap:5px;
+}
+.out
+{
+    display: flex;
+    position: absolute;
+    top: 92%;
+    left: 3%;
+    gap: 5px;
+}
+.heart
+{   
+    display: flex;
+    background-color: #e0e8f2;
+    border-radius: 50%;
+    justify-content: center;
+    height: 60px;
+    width: 60px;
+}
+.blockheart
+{   
+    display: flex;
+    position: absolute;
+    background-color: #e0e8f2;
+    border-radius: 50%;
+    justify-content: center;
+    align-self: center;
+    height: 40px;
+    width: 40px;
+    top: 20px;
+    right: 20px;
+}
+.rgt
+{
+    display: flex;
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.lft
+{
+    display: flex;
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.month
+{
+    font-family: 'Baloo 2';
+    color:#18333E;
+    margin-top: 10px;
+    display: flex;
+    font-size: 20px;
+}
+.pushups
+{
+    display: none;
+}
+.pushupsapp
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 60%;
+    right: 11%;
+    height: calc(330px - 10px);
+    width: 330px;
+    border-radius: 20px;
+    border: 1px silid rgba(0, 0, 0, 0.469);
+    z-index: 111;
+    gap: 10px;
+    padding-top: 10px;
+    background-color:  #E9F1FA;
+}
+.pushupsapp::after {
+    position: absolute;
+    content: "";
+    height: 40px;
+	width: 45px;
+    right: 0%;
+    top: -20%;
+    border-radius: 50%;
+    box-shadow: 0px 20px 0 0 #F2F8FD;
+    z-index: 70;
+}
+.pushupsapp::before {
+    position: absolute;
+    content: "";
+    height: 45px;
+	width: 45px;
+    background-color:  #E9F1FA;
+    right: 0%;
+    top: -10%;
+}
+.pushelements
+{
+    display: flex;
+    height: 13%;
+    width: 80%;
+    color: black;
+    position: relative;
+    z-index: 101;
+    text-align: center;
+    font-size: 20px;
+    line-height: 40px;
+    justify-content: space-around;
+    background: #F2F8FD;
+    border-radius: 30px; 
+}
+.point
+{
+    position: absolute;
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    background-color: red;
+    top: 0;
+    right: 11%;
+}
+.collage
+{
+    display: flex;
+    position: absolute;
+    top: 20%;
+    right: 7.5%;
+    width: 85%;
+    height: 12.5%;
+    background: rgba(255, 255, 255, 0.32);
+    backdrop-filter: blur(2.5px);
+    border-radius: 20px;
+    z-index: 85;
+}
+.collaheph
+{
+    display: flex;
+    position: absolute;
+    z-index: 90;
+    justify-content: space-between;
+    height: 100%;
+    width: 75%;
+    top: 22.5%;
+    left: 12.5%;
+}
+.coll
+{
+    width: 75px;
+    height: 55px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
