@@ -107,21 +107,28 @@ ele.addEventListener('mouseout',(e)=>
     psh.classList.remove('pushupsapp');
     psh.classList.add('pushups');
 })
-let pops = document.querySelector('#tag');
-let pops_txt = document.querySelector('.pop');
-let cont = document.querySelector('.popup');
-pops.addEventListener('click',(e)=>
+function animation(content)
 {
-    cont.classList.remove('popup');
-    cont.classList.add('null');
-    pops_txt.classList.remove('pop');
-    pops_txt.classList.add('popnull');
-})
-let nulltag = document.querySelector('.popup');
-nulltag.addEventListener('mouseover',(e)=>
-{
-    cont.classList.remove('null');
-    cont.classList.add('popup');
-    pops_txt.classList.remove('popnull');
-    pops_txt.classList.add('pop');
-})
+    let txtswap = document.querySelector('.pop')
+    let swap = document.querySelector('.popup');
+    if (content.classList.contains('popup'))
+    {   
+        let txtcontent = content.querySelector('.pop')
+        content.classList.remove('popup');
+        content.classList.add('null');
+        txtcontent.classList.remove('pop');
+        txtcontent.classList.add('popnull');
+    }
+    else
+    {
+        let txtcontent = content.querySelector('.popnull');
+        txtcontent.classList.remove('popnull');
+        txtcontent.classList.add('pop');
+        content.classList.remove('null');
+        content.classList.add('popup');
+        swap.classList.remove('popup');
+        swap.classList.add('null');
+        txtswap.classList.remove('pop');
+        txtswap.classList.add('popnull');
+    }
+}
