@@ -613,14 +613,13 @@ img.page
     border-radius: 20px;
     height: 119px;
     transition: 3s;
-    animation-duration: 2.5s;
+    animation-duration: 1s;
     animation-name: slide;
 }
 @keyframes slide
 {
     from 
     {
-        margin-left: -10%;
         width: 0%;
         height: 35px;
     }
@@ -643,6 +642,10 @@ img.page
 .popnull
 {
     display: none;
+    height: 50%;
+    width: 50%;
+    justify-content: space-around;
+    gap: 20px;
 }
 .popup_text
 {
@@ -652,6 +655,9 @@ img.page
 }
 .null
 {
+    content: '';
+    height: 100%;
+    width: auto;
     animation-duration: 2s;
     animation-name: appear;
 }
@@ -660,14 +666,12 @@ img.page
     from 
     {
         margin-left: -10%;
-        height: 0px;
-        width: 0px;
     }
     to 
     {
         margin-left: 0%;
-        height: 119px;
-        width: 118px;
+        height: 118px;
+        width: 119px;
     }
 }
 .null img
