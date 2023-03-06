@@ -242,7 +242,7 @@ a
 {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 55%;
     height: 100%;
 }
 .price
@@ -277,17 +277,36 @@ a
     display: flex;
     width: 100%;
     height: auto;
-    font-size: 20px;
-    line-height: 40px;
+    font-size: 18px;
+    line-height: 36px;
     gap: 10px;
+}
+.pages
+{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    width: 28%;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
 }
 .page
 {
     display: flex;
     flex-direction: column;
     position: relative;
+    height: 100%;
+    width: 28%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #18333E;
+    border-radius: 20px ;
+    background-color: #dde8f7;
+    text-align: center;
 }
-img.page
+.img_page
 {
     height: 300px;
     width: 200px;
@@ -298,25 +317,27 @@ img.page
     width: 100%;
     height: 40%;
     flex-direction: column;
+    align-items: center;
 }
 .dt
 {
     margin-top: 0px;
     display: flex;
     height: 20%;
-    width: 100%;
+    width: 90%;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 .toddate
 {
     border-radius: 20px;
     border: 1px solid #B4BCC4;
     height: 32px;
+    width: 140px;
 }
 .today
 {
-    margin-left:10px;
-    margin-right: 10px; 
+    text-align: center;
     line-height: 32px;
     font-size: 16px;
 }
@@ -324,6 +345,7 @@ img.page
 {
     display: flex;
     flex-direction: row;
+    width: 95%;
     height: 80px;
     justify-content: space-between;
     align-items: center;
@@ -694,5 +716,12 @@ img.page
     height: 100%;
     width: 100%;
     flex-direction: column;
+    align-items: center;
+}
+.Header_catal
+{
+    padding-bottom: 20px;
+    font-size: 40px;
+    text-align: center;
 }
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
