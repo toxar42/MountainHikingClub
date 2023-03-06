@@ -46,7 +46,7 @@ Generate(3);
 let h=1;
 maincont.onscroll = function()
 {
-    if(maincont.scrollTop > 200 * h ){
+    if(maincont.scrollTop > 100 * h ){
     Generate(1);
     h++;
     }
