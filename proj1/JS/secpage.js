@@ -13,39 +13,43 @@ function getRandomNumber(min, max) {
 }
 function Generate(n)
 {
-    for(let i = 0;i < n;i++)
-    {
+    for (let i = 0;i < n;i++)
     maincont.insertAdjacentHTML('beforeend',
     `<div class="catalogpage">
         <div class="page">
-        <img alt="sdfvsd" class=".img_page" src="${arrayRandElement(catalog_img)}">
+        <img alt="sdfvsd" class="img_page" src="${arrayRandElement(catalog_img)}">
         <div class="blockheart"><img class="smallph" src="../RESOURSES/heart.png" onclick="rotate(this)"></div>
         <p class="name">${arrayRandElement(catalog_text_description)} ${arrayRandElement(catalog_text)}</p><p class="name">
         <img alt="sdfvsd" class="smallph" src="../RESOURSES/Tag.png">${arrayRandElement(catalog_city)}<img alt="sdfvsd" src="../RESOURSES/star.png">${Math.round(getRandomNumber(3,5)*100)/100}</p>
         </div>
         <div class="page">
-        <img alt="sdfvsd" class=".img_page" src="${arrayRandElement(catalog_img)}">
+        <img alt="sdfvsd" class="img_page" src="${arrayRandElement(catalog_img)}">
         <div class="blockheart"><img class="smallph" src="../RESOURSES/heart.png" onclick="rotate(this)"></div>
         <p class="name">${arrayRandElement(catalog_text_description)} ${arrayRandElement(catalog_text)}</p><p class="name">
         <img alt="sdfvsd" class="smallph" src="../RESOURSES/Tag.png">${arrayRandElement(catalog_city)}<img alt="sdfvsd" src="../RESOURSES/star.png">${Math.round(getRandomNumber(3,5)*100)/100}</p>
         </div>
         <div class="page">
-        <img alt="sdfvsd" class=".img_page" src="${arrayRandElement(catalog_img)}">
+        <img alt="sdfvsd" class="img_page" src="${arrayRandElement(catalog_img)}">
         <div class="blockheart"><img class="smallph" src="../RESOURSES/heart.png" onclick="rotate(this)"></div>
         <p class="name">${arrayRandElement(catalog_text_description)} ${arrayRandElement(catalog_text)}</p><p class="name">
         <img alt="sdfvsd" class="smallph" src="../RESOURSES/Tag.png">${arrayRandElement(catalog_city)}<img alt="sdfvsd" src="../RESOURSES/star.png">${Math.round(getRandomNumber(3,5)*100)/100}</p>
         </div>
         <div class="page">
-        <img alt="sdfvsd" class=".img_page" src="${arrayRandElement(catalog_img)}">
+        <img alt="sdfvsd" class="img_page" src="${arrayRandElement(catalog_img)}">
         <div class="blockheart"><img class="smallph" src="../RESOURSES/heart.png" onclick="rotate(this)"></div>
         <p class="name">${arrayRandElement(catalog_text_description)} ${arrayRandElement(catalog_text)}</p><p class="name">
         <img alt="sdfvsd" class="smallph" src="../RESOURSES/Tag.png">${arrayRandElement(catalog_city)}<img alt="sdfvsd" src="../RESOURSES/star.png">${Math.round(getRandomNumber(3,5)*100)/100}</p>
         </div>
     </div>`); 
     }
-}
 Generate(3);
-document.addEventListener('scroll',function(e){
+let h=1;
+maincont.onscroll = function()
+{
+    if(maincont.scrollTop > 200 * h ){
     Generate(1);
-    })
+    h++;
+    }
+}
+console.log(document.querySelector('.catalogpage').scrollTop);
 
