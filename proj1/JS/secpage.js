@@ -42,7 +42,7 @@ function Generate(n)
         </div>
     </div>`); 
     }
-Generate(10);
+Generate(5);
 let h=1;
 let ch = document.querySelector('.catalogpage').clientHeight;
 maincont.onscroll = function()
