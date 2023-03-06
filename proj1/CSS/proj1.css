@@ -703,7 +703,7 @@ a
 .catalogpage
 {
     display: flex;
-    height: 50%;
+    height: 70%;
     width: 100%;
     gap: 50px;
     justify-content: space-around;
