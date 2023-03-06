@@ -11,8 +11,9 @@ function arrayRandElement(element)
 function getRandomNumber(min, max) {
     return Math.random() * (max - min) + min;
 }
-function Generate()
-{
+function Generate(n)
+{   
+    for (let i=0;i < n;i++){
     maincont.insertAdjacentHTML('beforeend',
     `<div class="catalogpage">
         <div class="page">
@@ -41,10 +42,10 @@ function Generate()
         </div>
     </div>`); 
 }
+}
 function firstblock(){
-    Generate();
-    Generate();
+    Generate(6);
 }
 document.addEventListener('scroll',function(e){
-    Generate();
+    Generate(1);
     })
