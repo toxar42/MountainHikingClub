@@ -18,36 +18,36 @@ function Generate(n)
     `<div class="catalogpage">
         <div class="page">
         <img alt="sdfvsd" class="img_page" src="${arrayRandElement(catalog_img)}">
-        <div class="blockheart"><img class="smallph" src="../RESOURSES/heart.png" onclick="rotate(this)"></div>
+        <div class="blockheartgen"><img class="smallph" src="../RESOURSES/heart.png" onclick="rotate(this)"></div>
         <p class="name">${arrayRandElement(catalog_text_description)} ${arrayRandElement(catalog_text)}</p><p class="name">
         <img alt="sdfvsd" class="smallph" src="../RESOURSES/Tag.png">${arrayRandElement(catalog_city)}<img alt="sdfvsd" src="../RESOURSES/star.png">${Math.round(getRandomNumber(3,5)*100)/100}</p>
         </div>
         <div class="page">
         <img alt="sdfvsd" class="img_page" src="${arrayRandElement(catalog_img)}">
-        <div class="blockheart"><img class="smallph" src="../RESOURSES/heart.png" onclick="rotate(this)"></div>
+        <div class="blockheartgen"><img class="smallph" src="../RESOURSES/heart.png" onclick="rotate(this)"></div>
         <p class="name">${arrayRandElement(catalog_text_description)} ${arrayRandElement(catalog_text)}</p><p class="name">
         <img alt="sdfvsd" class="smallph" src="../RESOURSES/Tag.png">${arrayRandElement(catalog_city)}<img alt="sdfvsd" src="../RESOURSES/star.png">${Math.round(getRandomNumber(3,5)*100)/100}</p>
         </div>
         <div class="page">
         <img alt="sdfvsd" class="img_page" src="${arrayRandElement(catalog_img)}">
-        <div class="blockheart"><img class="smallph" src="../RESOURSES/heart.png" onclick="rotate(this)"></div>
+        <div class="blockheartgen"><img class="smallph" src="../RESOURSES/heart.png" onclick="rotate(this)"></div>
         <p class="name">${arrayRandElement(catalog_text_description)} ${arrayRandElement(catalog_text)}</p><p class="name">
         <img alt="sdfvsd" class="smallph" src="../RESOURSES/Tag.png">${arrayRandElement(catalog_city)}<img alt="sdfvsd" src="../RESOURSES/star.png">${Math.round(getRandomNumber(3,5)*100)/100}</p>
         </div>
         <div class="page">
         <img alt="sdfvsd" class="img_page" src="${arrayRandElement(catalog_img)}">
-        <div class="blockheart"><img class="smallph" src="../RESOURSES/heart.png" onclick="rotate(this)"></div>
+        <div class="blockheartgen"><img class="smallph" src="../RESOURSES/heart.png" onclick="rotate(this)"></div>
         <p class="name">${arrayRandElement(catalog_text_description)} ${arrayRandElement(catalog_text)}</p><p class="name">
         <img alt="sdfvsd" class="smallph" src="../RESOURSES/Tag.png">${arrayRandElement(catalog_city)}<img alt="sdfvsd" src="../RESOURSES/star.png">${Math.round(getRandomNumber(3,5)*100)/100}</p>
         </div>
     </div>`); 
     }
-Generate(5);
+Generate(10);
 let h=1;
 let ch = document.querySelector('.catalogpage').clientHeight;
 maincont.onscroll = function()
-{
-    if(maincont.scrollTop >ch * h ){
+{   
+    if(maincont.scrollTop > ch * h ){
     Generate(1);
     h++;
     }
