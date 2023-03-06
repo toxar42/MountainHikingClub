@@ -44,9 +44,10 @@ function Generate(n)
     }
 Generate(10);
 let h=1;
+let ch = document.querySelector('.catalogpage').clientHeight;
 maincont.onscroll = function()
 {
-    if(maincont.scrollTop > 600 * h ){
+    if(maincont.scrollTop >ch * h ){
     Generate(1);
     h++;
     }
