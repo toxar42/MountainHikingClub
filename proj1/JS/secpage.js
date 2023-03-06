@@ -43,9 +43,7 @@ function Generate(n)
     </div>`); 
 }
 }
-function firstblock(){
-    Generate(6);
-}
+Generate(6);
 document.addEventListener('scroll',function(e){
     Generate(1);
     })
