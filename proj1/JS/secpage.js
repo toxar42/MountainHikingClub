@@ -42,7 +42,7 @@ function Generate(n)
         </div>
     </div>`); 
     }
-Generate(3);
+Generate(10);
 let h=1;
 maincont.onscroll = function()
 {
