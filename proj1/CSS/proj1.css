@@ -61,7 +61,11 @@ body
     background-color:  #E9F1FA;
     width: 85%;
     height: 100%;
+    border: none;
     text-align: left;
+    padding-left: 40px;
+    font-size: 18px;
+    letter-spacing: 1px;
 }
 .log
 {
@@ -74,18 +78,11 @@ body
 }
 .loop
 {
+    position: absolute;
+    top:10px;
+    left: 12.5%;
     height: 18px;
     width: 18px;
-    margin-top: 9px;
-    padding-right: 10px;
-    padding-left: 9px;
-}
-.txt_search
-{
-    letter-spacing: 1px;
-    color: rgb(95, 95, 95);
-    font-size: 18px;
-    line-height: 36px;
 }
 .param
 {   
@@ -174,7 +171,7 @@ body
     width: 55%;
     display: flex;
     flex-direction: row; 
-    gap: 7%;
+    gap: 3.5%;
 }
 .content
 {
@@ -187,14 +184,14 @@ body
 .cont
 {
     display: flex;
-    width: 50%;
+    width: 80%;
     height: auto;
     gap:20px;
 }
 .cont1
 {
     display: flex;
-    width: 100%;
+    width: 80%;
     height: auto;
     position: relative;
     z-index: 1;
@@ -215,6 +212,7 @@ body
 .theme
 {
     text-align: left;
+    padding-left: 10px;
 }
 .links
 {
@@ -224,6 +222,7 @@ body
     height: 20px;
     gap: 30px;
     margin-top: 10px;
+    padding-left: 10px;
 }
 .lin
 {
@@ -287,8 +286,11 @@ a
 .name
 {   
     display: flex;
-    width: 100%;
+    width: auto;
     height: auto;
+    text-align: center;
+    align-self: center;
+    align-items: center;
     font-size: 18px;
     line-height: 36px;
     gap: 10px;
@@ -310,7 +312,7 @@ a
     flex-direction: column;
     position: relative;
     height: 90%;
-    width: 28%;
+    width: 17%;
     padding: 10px;
     border: 1px solid #18333E;
     border-radius: 20px ;
@@ -426,8 +428,8 @@ a
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: auto;
-    gap: 15px;
+    height: 100%;
+    gap: 10px;
 }
 .per
 {
@@ -517,7 +519,8 @@ a
     height: 40px;
     width: 40px;
     top: 5%;
-    right: 15%;
+    right: 10%;
+    z-index: 100;
 }
 .rgt
 {
@@ -554,12 +557,12 @@ a
     align-items: center;
     position: absolute;
     top: 60%;
-    right: 11%;
+    right: 6.5%;
     height: calc(330px - 10px);
     width: 330px;
     border-radius: 20px;
     border: 1px silid rgba(0, 0, 0, 0.469);
-    z-index: 111;
+    z-index: 110;
     gap: 10px;
     padding-top: 10px;
     background-color:  #E9F1FA;
@@ -736,18 +739,16 @@ a
     display: flex;
     height: 70%;
     width: 100%;
-    gap: 50px;
     justify-content: space-around;
 }
 .column_catalog
 {
     display: flex;
     height: 100%;
-    width: 100%;
+    width: 90%;
     flex-direction: column;
     align-items: center;
     overflow-y: scroll;
-
 }
 .Header_catal
 {
