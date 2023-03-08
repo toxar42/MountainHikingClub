@@ -314,7 +314,7 @@ a
     height: 90%;
     width: 17%;
     padding: 10px;
-    border: 1px solid #18333E;
+    border: 1px solid #B4BCC4;
     border-radius: 20px ;
     background-color: #E9F1FA;
     text-align: center;
@@ -519,7 +519,7 @@ a
     height: 40px;
     width: 40px;
     top: 7.5%;
-    right: 12.5%;
+    left: 67.5%;
     z-index: 100;
 }
 .rgt
