@@ -63,7 +63,7 @@ body
     height: 100%;
     border: none;
     text-align: left;
-    padding-left: 40px;
+    padding-left: 6%;
     font-size: 18px;
     letter-spacing: 1px;
 }
@@ -518,8 +518,8 @@ a
     align-self: center;
     height: 40px;
     width: 40px;
-    top: 5%;
-    right: 10%;
+    top: 25px;
+    right: 25px;
     z-index: 100;
 }
 .rgt
