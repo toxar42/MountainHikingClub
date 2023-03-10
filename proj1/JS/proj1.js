@@ -140,27 +140,28 @@ block_swap.onclick = function()
     if(!swap){
         document.querySelector('.white').classList.add('black');
         document.querySelector('.white').classList.remove('white');
-        localStorage.setItem('theme',JSON.stringify(1));
+        localStorage.setItem('Theme',JSON.stringify(1));
         swap = true;
     }
     else{
         document.querySelector('.black').classList.add('white');
         document.querySelector('.black').classList.remove('black');
+        localStorage.setItem('Theme',JSON.stringify(0));
         swap = false;
-        localStorage.setItem('theme',JSON.stringify(0));
     }
 }
+let chek_b = localStorage.getItem('Theme');
 function ch_theme(){
-    let chek_b = localStorage.getItem('theme');
-    console.log(chek_b);
-    if (chek_b == '1')
-    {
-        document.querySelector('.white').classList.add('black');
-        document.querySelector('.white').classList.remove('white');
-    }
-    else
+    if (chek_b == '0')
     {
         document.querySelector('.black').classList.add('white');
         document.querySelector('.black').classList.remove('black');
+        swap = false;
+    }
+    else
+    {
+        document.querySelector('.white').classList.add('black');
+        document.querySelector('.white').classList.remove('white');
+        swap = true;
     }
 }
