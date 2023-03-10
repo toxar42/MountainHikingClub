@@ -1,5 +1,5 @@
-let flag = false; 
 let a = false;
+let flag = false; 
 let numdate = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31];
 let mondate = ['January','February','March','April','May','June','July','August','September','October','November','December'];
 let monlength = [31,31,30,30,31,30,30,29,30,31,30,31];
@@ -35,6 +35,7 @@ function todayData()
     let Data = new Date();
     let Day = Data.getDate();
     let Month = Data.getMonth();
+    let fMonth;
     switch (Month)
 {
   case 0: fMonth="Janyary"; break;
@@ -130,5 +131,36 @@ function animation(content)
         swap.classList.add('null');
         txtswap.classList.remove('pop');
         txtswap.classList.add('popnull');
+    }
+}
+let block_swap = document.getElementById('theme');
+let swap = false;
+block_swap.onclick = function()
+{
+    if(!swap){
+        document.querySelector('.white').classList.add('black');
+        document.querySelector('.white').classList.remove('white');
+        localStorage.setItem('theme',JSON.stringify(1));
+        swap = true;
+    }
+    else{
+        document.querySelector('.black').classList.add('white');
+        document.querySelector('.black').classList.remove('black');
+        swap = false;
+        localStorage.setItem('theme',JSON.stringify(0));
+    }
+}
+function ch_theme(){
+    let chek_b = localStorage.getItem('theme');
+    console.log(chek_b);
+    if (chek_b == '1')
+    {
+        document.querySelector('.white').classList.add('black');
+        document.querySelector('.white').classList.remove('white');
+    }
+    else
+    {
+        document.querySelector('.black').classList.add('white');
+        document.querySelector('.black').classList.remove('black');
     }
 }
